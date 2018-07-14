@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Altura/Largura</title>
+	<script type="text/javascript">
+			function botV(){
+				window.location.href = "../Css Preenchimento/topico_[8].html";
+			}
+			function botP(){
+				window.location.href = "../Css Box Modelo/topico_[10].html";
+			}
+		</script>
+
+		<style type="text/css">
+			body{
+				background-image: url(../Ripples_06_A-small-map.jpg);
+			}
+			p{
+				background-color: lightgreen;
+				color: black; 
+				margin-right: 400px;
+				align-content: center;
+				font-family: verdana;
+				font-size: 16px;
+
+			}
+			ul{
+				background-color: lightgreen;
+				color: black; 
+				margin-right: 400px;
+				align-content: center;
+				font-family: verdana;
+				font-size: 16px;				
+			}
+			h1, h2{
+				color: purple; 
+			}
+			div{ 
+				background-color: lightgrey;
+    			width: 500px;
+    			border-left: 7px solid green;
+    			padding: 10px;
+    			margin: 0px;
+			}
+
+
+		</style>
+</head>
+<body>
+	<h1>Ajuste de altura e largura</h1>
+	<p>
+		As propriedades <b style="background-color: yellow; color: gray;">height</b> e <b style="background-color: yellow; color: gray;">width</b> são usadas para definir a altura e a largura de um elemento.<br>
+		<br>
+		O <b style="background-color: yellow; color: gray;">height</b> e <b style="background-color: yellow; color: gray;">width</b> pode ser definido como automático (isso é o padrão. Significa que o navegador calcula a altura e a largura) ou pode ser especificado em valores de comprimento , como px, cm, etc., ou em porcentagem (%) do bloco de contenção.
+	</p>
+	<div style="height: 200px; width: 50%; background-color: powderblue;">
+		Este elemento tem uma altura de 200 pixels e uma largura de 50%
+	</div><br>
+
+	<div>
+		<h2>Exemplo</h2>
+		div {<br>
+    	&nbsp;&nbsp;	height: 200px;<br>
+    	&nbsp;&nbsp;	width: 50%;<br>
+    	&nbsp;&nbsp;	background-color: powderblue;<br>
+		}<br>
+	</div><br>
+
+	<div style="height: 100px; width: 500px; background-color: powderblue;">
+		Este elemento tem uma altura de 100 pixels e uma largura de 500 pixels.
+	</div><br>
+
+	<div>
+		<h2>Exemplo</h2>
+		div {<br>
+    	&nbsp;&nbsp;	height: 100px;<br>
+    	&nbsp;&nbsp;	width: 500px;<br>
+    	&nbsp;&nbsp;	background-color: powderblue;<br>
+		}<br>
+	</div>
+	<p><b>Nota:</b> as propriedades <b style="background-color: yellow; color: gray;">height</b> e <b style="background-color: yellow; color: gray;">width</b> não incluem preenchimento, bordas ou margens; eles definem a altura / largura da área dentro do preenchimento, borda e margem do elemento!</p>
+
+	<button type="button" onclick="botV()" style="margin-top: 10px; margin-right: 10px; margin-left: 600px; margin-bottom: 10px; background-color: purple; color: yellow; font-size: 18px;">
+			Voltar.
+		</button>
+
+	<button type="button" onclick="botP()" style="margin-top: 10px; margin-right: 10px; margin-left: 50px; margin-bottom: 10px; background-color: purple; color: yellow; font-size: 18px;"> 
+			Próxima.
+	</button>
+</body>
+</html>

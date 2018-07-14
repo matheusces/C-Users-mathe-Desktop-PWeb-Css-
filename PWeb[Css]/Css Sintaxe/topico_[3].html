@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Css Sintaxe</title>
+		<script type="text/javascript">
+			function botV(){
+				window.location.href = "../Css Introdução/topico_[2].html";
+			}
+			function botP(){
+				window.location.href = "../Css Cores/topico_[4].html";
+			}
+		</script>
+
+		<style type="text/css">
+			body{
+				background-image: url(../Ripples_06_A-small-map.jpg);
+			}
+			p{
+				background-color: lightgreen;
+				color: black; 
+				margin-right: 400px;
+				align-content: center;
+				font-family: verdana;
+				font-size: 16px;
+
+			}
+			ul{
+				background-color: lightgreen;
+				color: black; 
+				margin-right: 400px;
+				align-content: center;
+				font-family: verdana;
+				font-size: 16px;				
+			}
+			h1, h2{
+				color: purple; 
+			}
+			div{ 
+				background-color: lightgrey;
+    			width: 500px;
+    			border-left: 7px solid green;
+    			padding: 10px;
+    			margin: 0px;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<h1>Sintaxe CSS e Seletores</h1>
+		<p>
+			Um conjunto de regras CSS consiste em um seletor e um bloco de declaração:
+		
+		<img src="selector.gif">
+		O seletor aponta para o elemento HTML que você deseja estilizar.<br>
+		<br>
+		O bloco de declaração contém uma ou mais declarações separadas por ponto e vírgula.<br>
+		<br>
+		Cada declaração inclui um nome de propriedade CSS e um valor, separados por dois pontos.<br>
+		<br>
+		Uma declaração CSS sempre termina com um ponto-e-vírgula e os blocos de declaração são cercados por chaves.<br>
+		<br>
+		No exemplo a seguir, todos os elementos <p> serão alinhados ao centro, com uma cor de texto vermelha:
+		</p>
+
+		<div>
+			<h2>Exemplo</h2>
+			p {<br>
+    		&nbsp;&nbsp;	color: red;<br>
+    		&nbsp;&nbsp;	text-align: center;<br>
+			}
+		</div>
+		<h2>Seletores de CSS</h2>
+			<p>
+				Os seletores CSS são usados ​​para "localizar" (ou selecionar) elementos HTML com base no nome, ID, classe, atributo e mais do elemento.
+			</p>
+		<h2>O elemento Selector</h2>
+			<p>
+				O seletor de elemento seleciona elementos com base no nome do elemento.<br>
+				<br>
+				Você pode selecionar todos os elementos <p> em uma página como essa (nesse caso, todos os elementos <p> serão alinhados ao centro, com uma cor de texto vermelha):<br>
+
+				<div>
+					<h2>Exemplo</h2>
+					p {<br>
+    				&nbsp;&nbsp;	text-align: center;<br>
+    				&nbsp;&nbsp;	color: red;<br>
+					}
+				</div>
+			</p>
+		<h2>O seletor de id</h2>
+			<p>
+				O seletor de id usa o atributo id de um elemento HTML para selecionar um elemento específico.<br>
+				<br>
+				O id de um elemento deve ser único dentro de uma página, então o seletor de id é usado para selecionar um elemento único!<br>
+				<br>
+				Para selecionar um elemento com um id específico, escreva um caractere hash (#), seguido pelo id do elemento.<br>
+				<br>
+				A regra de estilo abaixo será aplicada ao elemento HTML com id = "para1":
+
+				<div>
+					<h2>Exemplo</h2>
+					#para1 {<br>
+    				&nbsp;&nbsp;	text-align: center;<br>
+    				&nbsp;&nbsp;	color: red;<br>
+					}
+				</div>
+			</p>
+		<div><b>Nota:</b> Um nome de id não pode começar com um número!</div>
+
+		<h2>O seletor de classe</h2>
+		<p>
+			O seletor de classe seleciona elementos com um atributo de classe específico.<br>
+			<br>
+			Para selecionar elementos com uma classe específica, escreva um caractere de ponto (.), Seguido do nome da classe.<br>
+			<br>
+			No exemplo abaixo, todos os elementos HTML com class = "center" serão vermelhos e alinhados ao centro:<br>	
+			<div>
+				<h2>Exemplo</h2>
+				<p>
+					.center {<br>
+    				&nbsp;&nbsp;	text-align: center;<br>
+    				&nbsp;&nbsp;	color: red;<br>
+					}
+				</p>
+			</div>
+			Você também pode especificar que somente elementos HTML específicos devem ser afetados por uma classe.<br>
+			<br>
+			No exemplo abaixo, apenas os elementos <p> com class = "center" serão centralizados:<br>	
+			<div>
+				p.center {<br>
+    			&nbsp;&nbsp;	text-align: center;<br>
+    			&nbsp;&nbsp;	color: red;<br>
+				}
+			</div>
+			Elementos HTML também podem se referir a mais de uma classe.<br>
+			<br>
+			No exemplo abaixo, o elemento <p> será estilizado de acordo com class = "center" e class = "large":<br>
+			<div>
+				<h2>Exemplo</h2>
+				&nbsp;<p class="center large">This paragraph refers to two classes.</p>
+			</div>
+			<div><b>Nota:</b> Um nome de classe não pode começar com um número!</div>
+		</p>
+
+		<button type="button" onclick="botV()" style="margin-top: 10px; margin-right: 10px; margin-left: 600px; margin-bottom: 10px; background-color: purple; color: yellow; font-size: 18px;">
+			Voltar.
+		</button>
+
+		<button type="button" onclick="botP()" style="margin-top: 10px; margin-right: 10px; margin-left: 50px; margin-bottom: 10px; background-color: purple; color: yellow; font-size: 18px;"> 
+			Próxima.
+		</button>
+	</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Fundos</title>
+	<script type="text/javascript">
+			function botV(){
+				window.location.href = "../Css Cores/topico_[4].html";
+			}
+			function botP(){
+				window.location.href = "../Css Fronteiras/topico_[6].html";
+			}
+		</script>
+
+		<style type="text/css">
+			body{
+				background-image: url(../Ripples_06_A-small-map.jpg);
+			}
+			p{
+				background-color: lightgreen;
+				color: black; 
+				margin-right: 400px;
+				align-content: center;
+				font-family: verdana;
+				font-size: 16px;
+
+			}
+			ul{
+				background-color: lightgreen;
+				color: black; 
+				margin-right: 400px;
+				align-content: center;
+				font-family: verdana;
+				font-size: 16px;				
+			}
+			h1, h2{
+				color: purple; 
+			}
+			div{ 
+				background-color: lightgrey;
+    			width: 500px;
+    			border-left: 7px solid green;
+    			padding: 10px;
+    			margin: 0px;
+			}
+
+
+		</style>
+</head>
+<body>
+	<h1>Fundos CSS</h1>
+	<p style="background-color: blue">
+		As propriedades de plano de fundo do CSS são usadas para definir os efeitos de segundo plano para elementos.<br>
+		<br>
+		Propriedades de fundo CSS:<br>
+		<ul style="background-color: blue">
+			<li>cor de fundo</li>
+			<li>imagem de fundo</li>	
+			<li>fundo de repetição</li>
+			<li>fundo de ligação</li>
+			<li>posição de fundo</li>
+		</ul>
+	</p>
+	<h2>Cor de fundo</h2>
+	<p>
+		A <b style="background-color: gray">background-color</b> propriedade especifica a cor de fundo de um elemento.<br>
+		<br>
+		A cor de fundo de uma página é configurada assim:<br>
+	</p>
+	<div>
+		<h2>Exemplo</h2>
+		body {<br>
+    	&nbsp;&nbsp;	background-color: lightblue;<br>
+		}<br>
+	</div>
+	<p>
+		Com CSS, uma cor é mais frequentemente especificada por:
+		<ul>
+			<li>um nome de cor válido - como "vermelho"</li>
+			<li>um valor HEX - como "# ff0000"</li>
+			<li>um valor RGB - como "rgb (255,0,0)"</li>
+		</ul>
+		<p>Veja os <u>valores de cores CSS</u> para obter uma lista completa de possíveis valores de cores.<br>
+		<br>
+		No exemplo abaixo, os elementos <"h1">, <"p"> e <"div"> têm cores de fundo diferentes:<br></p>
+	</p>
+	<div>
+		<h2>Exemplo</h2>
+		h1 {<br>
+    	&nbsp;&nbsp;	background-color: green;<br>
+		}<br>
+
+		div {<br>
+    	&nbsp;&nbsp;	background-color: lightblue;<br>
+		}<br>
+
+		p {<br>
+    	&nbsp;&nbsp;	background-color: yellow;<br>
+		}<br>
+	</div>
+	<h2>Imagem de fundo</h2>
+		<p>
+			A <b style="background-color: gray">background-image</b> propriedade especifica uma imagem para usar como plano de fundo de um elemento.<br>
+			<br>
+			Por padrão, a imagem é repetida para cobrir todo o elemento.<br>
+			<br>
+			A imagem de fundo de uma página pode ser configurada assim:
+		</p>
+		<div>
+			<h2>Exemplo</h2>
+			body {<br>
+    		&nbsp;&nbsp;	background-image: url("paper.gif");<br>
+			}<br>
+		</div>
+	<p>Abaixo está um exemplo de uma combinação <b>ruim</b> de texto e imagem de fundo. O texto é dificilmente legível:</p>
+		<div>
+			<h2>
+				body {<br>
+  				&nbsp;&nbsp;	background-image: url("bgdesert.jpg");<br>
+				}<br>
+			</h2>
+		</div><br>
+		<div>
+			<b>Nota:</b> Ao usar uma imagem de fundo, use uma imagem que não perturbe o texto.
+		</div>
+	<button type="button" onclick="botV()" style="margin-top: 10px; margin-right: 10px; margin-left: 600px; margin-bottom: 10px; background-color: purple; color: yellow; font-size: 18px;">
+			Voltar.
+		</button>
+
+	<button type="button" onclick="botP()" style="margin-top: 10px; margin-right: 10px; margin-left: 50px; margin-bottom: 10px; background-color: purple; color: yellow; font-size: 18px;"> 
+			Próxima.
+	</button>
+</body>
+</html>

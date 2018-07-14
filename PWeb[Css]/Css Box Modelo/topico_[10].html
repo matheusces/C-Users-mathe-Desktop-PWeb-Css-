@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Box Modelo</title>
+	<script type="text/javascript">
+			function botV(){
+				window.location.href = "../Css Altura-Largura/topico_[9].html";
+			}
+		</script>
+
+		<style type="text/css">
+			body{
+				background-image: url(../Ripples_06_A-small-map.jpg);
+			}
+			p{
+				background-color: lightgreen;
+				color: black; 
+				margin-right: 400px;
+				align-content: center;
+				font-family: verdana;
+				font-size: 16px;
+
+			}
+			ul{
+				background-color: lightgreen;
+				color: black; 
+				margin-right: 400px;
+				align-content: center;
+				font-family: verdana;
+				font-size: 16px;				
+			}
+			h1, h2{
+				color: purple; 
+			}
+			div{ 
+				background-color: lightgrey;
+    			width: 500px;
+    			border-left: 7px solid green;
+    			padding: 10px;
+    			margin: 0px;
+			}
+
+
+		</style>
+</head>
+<body>
+	<h1>O modelo de caixa CSS</h1>
+	<p>
+		Todos os elementos HTML podem ser considerados como caixas. Em CSS, o termo "modelo de caixa" é usado quando se fala em design e layout.<br>
+		<br>
+		O modelo de caixa CSS é essencialmente uma caixa que envolve todos os elementos HTML. Consiste em: margens, bordas, preenchimento e o conteúdo real. A imagem abaixo ilustra o modelo de caixa:<br>
+	</p>
+	<div style="width: 300px; border: 25px solid green; padding: 25px; margin: 25px;">
+		BOX
+	</div>
+	<p>Explicação das diferentes partes:
+
+		<ul>
+			<li><b>Conteúdo</b> - O conteúdo da caixa, onde texto e imagens aparecem</li>
+			<li><b>Preenchimento</b> - Limpa uma área ao redor do conteúdo. O preenchimento é transparente</li>
+			<li><b>Borda</b> - uma borda que circunda o preenchimento e o conteúdo</li>
+			<li><b>Margem</b> - Limpa uma área fora da borda. A margem é transparente</li>
+		</ul>
+
+		<p>O modelo de caixa nos permite adicionar uma borda ao redor dos elementos e definir o espaço entre os elementos.</p> 
+	</p>
+	<div>
+		<h2>Exemplo</h2>
+		div {<br>
+    	&nbsp;&nbsp;	width: 300px;<br>
+    	&nbsp;&nbsp;	border: 25px solid green;<br>
+    	&nbsp;&nbsp;	padding: 25px;<br>
+    	&nbsp;&nbsp;	margin: 25px;<br>
+		}<br>
+	</div><br>
+	<h2>Largura e Altura de um Elemento</h2>
+	<p>Para definir a largura e a altura de um elemento corretamente em todos os navegadores, você precisa saber como o modelo de caixa funciona.</p>
+	<div>
+		<b>Importante:</b> Quando você define as propriedades de largura e altura de um elemento com CSS, basta definir a largura e a altura da <b>área de conteúdo.</b> Para calcular o tamanho total de um elemento, você também deve adicionar preenchimento, bordas e margens.
+	</div><br>
+
+	<p>Suponha que desejamos estilizar um elemento <"div"> para ter uma largura total de 350px:</p>
+	<div>
+		<h2>Exemplo</h2>
+		div {<br>
+    	&nbsp;&nbsp;	width: 320px;<br>
+   	 	&nbsp;&nbsp;	padding: 10px;<br>
+    	&nbsp;&nbsp;	border: 5px solid gray;<br>
+    	&nbsp;&nbsp;	margin: 0;<br> 
+		}<br>
+	</div><br>
+
+	<p>Aqui está o cálculo:</p>
+	<div>
+		320px (largura)<br> 
+		+ 20px (preenchimento esquerdo / direito)<br> 
+		+ 10px (borda esquerda + direita) <br>
+		+ 0px (margem esquerda + direita) <br>
+		= 350px<br>
+	</div><br>
+	<p>
+		A largura total de um elemento deve ser calculada da seguinte forma:<br>
+		<br>
+		Largura total do elemento = largura + preenchimento à esquerda + preenchimento à direita + borda esquerda + borda direita + margem esquerda + margem direita<br>
+		<br>
+		A altura total de um elemento deve ser calculada da seguinte forma:<br>
+		<br>
+		Altura total do elemento = altura + preenchimento superior + preenchimento inferior + borda superior + borda inferior + margem superior + margem inferior<br>
+	</p>
+
+	<button type="button" onclick="botV()" style="margin-top: 10px; margin-right: 10px; margin-left: 600px; margin-bottom: 10px; background-color: purple; color: yellow; font-size: 18px;">
+			Voltar.
+		</button>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Fronteiras</title>
+	<script type="text/javascript">
+			function botV(){
+				window.location.href = "../Css Fundos/topico_[5].html";
+			}
+			function botP(){
+				window.location.href = "../Css Margens/topico_[7].html";
+			}
+		</script>
+
+		<style type="text/css">
+			body{
+				background-image: url(../Ripples_06_A-small-map.jpg);
+			}
+			p{
+				background-color: lightgreen;
+				color: black; 
+				margin-right: 400px;
+				align-content: center;
+				font-family: verdana;
+				font-size: 16px;
+
+			}
+			ul{
+				background-color: lightgreen;
+				color: black; 
+				margin-right: 400px;
+				align-content: center;
+				font-family: verdana;
+				font-size: 16px;				
+			}
+			h1, h2{
+				color: purple; 
+			}
+			div{ 
+				background-color: lightgrey;
+    			width: 500px;
+    			border-left: 7px solid green;
+    			padding: 10px;
+    			margin: 0px;
+			}
+
+
+		</style>
+</head>
+<body>
+	<h1>Fronteiras de CSS</h1>
+	<h2>Propriedades de borda CSS</h2>
+	<p>As <b style="background-color: yellow; color: gray;">border</b> propriedades CSS permitem que você especifique o estilo, a largura e a cor da borda de um elemento.</p>
+	<p style="border-style: solid;">Eu tenho fronteiras de todos os lados.</p>
+	<p style="border-style: solid; border-bottom-color: red;">Eu tenho uma borda inferior vermelha.</p>
+	<h2>Estilo de borda</h2>
+	A <b style="background-color: yellow; color: gray;">border-style</b> propriedade especifica o tipo de borda a ser exibido.<br>
+	<br>
+	Os seguintes valores são permitidos:<br>
+	<ul>
+		<li>dotted - Define uma borda pontilhada</li>
+		<li>dashed - Define uma borda tracejada</li>
+		<li>solid - Define uma borda sólida</li>
+		<li>double - Define uma fronteira dupla</li>
+		<li>groove- Define uma borda com sulcos 3D. O efeito depende do valor da cor da borda</li>
+		<li>ridge- Define uma borda 3D sulcada. O efeito depende do valor da cor da borda</li>
+		<li>inset- Define uma borda inserida em 3D. O efeito depende do valor da cor da borda</li>
+		<li>outset- Define uma borda de partida 3D. O efeito depende do valor da cor da borda</li>
+		<li>none - não define fronteiras</li>
+		<li>hidden - Define uma borda oculta</li>
+	</ul>
+	<p>A <b style="background-color: yellow; color: gray;">border-style</b> propriedade pode ter de um a quatro valores (para a borda superior, borda direita, borda inferior e borda esquerda).</p>
+	<div>
+		<h2>Exemplo</h2>
+		p.dotted {border-style: dotted;}<br>
+		p.dashed {border-style: dashed;}<br>
+		p.solid {border-style: solid;}<br>
+		p.double {border-style: double;}<br>
+		p.groove {border-style: groove;}<br>
+		p.ridge {border-style: ridge;}<br>
+		p.inset {border-style: inset;}<br>
+		p.outset {border-style: outset;}<br>
+		p.none {border-style: none;}<br>
+		p.hidden {border-style: hidden;}<br>
+		p.mix {border-style: dotted dashed solid double;}<br>
+	</div><br>
+	<div>
+		<b>Nota:</b> Nenhuma das outras propriedades de borda CSS descritas abaixo terá QUALQUER efeito, a menos que a border-stylepropriedade esteja definida!
+	</div>
+	<h2>Largura da Fronteira</h2>
+	A <b style="background-color: yellow; color: gray;">border-width</b> propriedade especifica a largura das quatro bordas.<br>
+	<br>
+	A largura pode ser definida como um tamanho específico (em px, pt, cm, em, etc) ou usando um dos três valores predefinidos: thin, medium ou thick.<br>
+	<br>
+	A <b style="background-color: yellow; color: gray;">border-width</b> propriedade pode ter de um a quatro valores (para a borda superior, borda direita, borda inferior e borda esquerda).
+	<br>
+	<p style="border-style: solid"><b style="background-color: yellow; color: gray;">Largura de borda de 5px</b></p>
+	<div>
+		<h2>Exemplo</h2>
+		p.one {<br>
+    	&nbsp;&nbsp;	border-style: solid;<br>
+    	&nbsp;&nbsp;	border-width: 5px;<br>
+		}
+
+		p.two {<br>
+    	&nbsp;&nbsp;	border-style: solid;<br>
+   		&nbsp;&nbsp;	order-width: medium;<br>
+		}<br>
+
+		p.three {<br>
+    	&nbsp;&nbsp;	border-style: solid;<br>
+    	&nbsp;&nbsp;	border-width: 2px 10px 4px 20px;<br>
+		}<br>
+	</div>
+	<button type="button" onclick="botV()" style="margin-top: 10px; margin-right: 10px; margin-left: 600px; margin-bottom: 10px; background-color: purple; color: yellow; font-size: 18px;">
+			Voltar.
+		</button>
+
+	<button type="button" onclick="botP()" style="margin-top: 10px; margin-right: 10px; margin-left: 50px; margin-bottom: 10px; background-color: purple; color: yellow; font-size: 18px;"> 
+			Próxima.
+	</button>
+</body>
+</html>

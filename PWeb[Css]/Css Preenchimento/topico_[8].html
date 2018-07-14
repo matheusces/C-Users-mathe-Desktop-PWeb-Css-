@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Preenchimento</title>
+	<script type="text/javascript">
+			function botV(){
+				window.location.href = "../Css Margens/topico_[7].html";
+			}
+			function botP(){
+				window.location.href = "../Css Altura-Largura/topico_[9].html";
+			}
+		</script>
+
+		<style type="text/css">
+			body{
+				background-image: url(../Ripples_06_A-small-map.jpg);
+			}
+			p{
+				background-color: lightgreen;
+				color: black; 
+				margin-right: 400px;
+				align-content: center;
+				font-family: verdana;
+				font-size: 16px;
+
+			}
+			ul{
+				background-color: lightgreen;
+				color: black; 
+				margin-right: 400px;
+				align-content: center;
+				font-family: verdana;
+				font-size: 16px;				
+			}
+			h1, h2{
+				color: purple; 
+			}
+			div{ 
+				background-color: lightgrey;
+    			width: 500px;
+    			border-left: 7px solid green;
+    			padding: 10px;
+    			margin: 0px;
+			}
+
+
+		</style>
+</head>
+<body>
+	<h1>Preenchimento de CSS</h1>
+	<p>
+		As <b style="background-color: yellow; color: gray;">padding</b> propriedades CSS são usadas para gerar espaço em torno do conteúdo de um elemento, dentro de qualquer borda definida.<br>
+		<br>
+		Com CSS, você tem controle total sobre o preenchimento. Existem propriedades para definir o preenchimento de cada lado de um elemento (superior, direita, inferior e esquerda).
+	</p>
+	<h2>Preenchimento - Lados Individuais</h2>
+	<p>
+		CSS tem propriedades para especificar o preenchimento para cada lado de um elemento:
+		<ul>
+			<li style="background-color: yellow; color: gray;">padding-top</li>
+			<li style="background-color: yellow; color: gray;">padding-right</li>
+			<li style="background-color: yellow; color: gray;">padding-bottom</li>
+			<li style="background-color: yellow; color: gray;">padding-left</li>
+		</ul>
+		<p>Todas as propriedades de preenchimento podem ter os seguintes valores:</p>
+		<ul>
+			<li>length - especifica um preenchimento em px, pt, cm, etc.</li>
+			<li>% - especifica um preenchimento em% da largura do elemento contido</li>
+			<li>inherit - especifica que o preenchimento deve ser herdado do elemento pai</li>
+		</ul>
+		<p><b>Nota:</b> Valores negativos não são permitidos.<br>
+		<br>
+		O exemplo a seguir define um preenchimento diferente para todos os quatro lados de um elemento:</p> 
+	</p>
+	<div>
+		<h2>Exemplo</h2>
+		div {<br>
+    	&nbsp;&nbsp;	padding-top: 50px;<br>
+    	&nbsp;&nbsp;	padding-right: 30px;<br>
+    	&nbsp;&nbsp;	padding-bottom: 50px;<br>
+    	&nbsp;&nbsp;	padding-left: 80px;<br>
+		}<br>
+	</div><br>
+	<h2>Preenchimento - Propriedade de taquigrafia</h2>
+	<p>
+		Para encurtar o código, é possível especificar todas as propriedades de preenchimento em uma propriedade.<br>
+		<br>
+		A <b style="background-color: yellow; color: gray;">padding</b> propriedade é uma propriedade abreviada para as seguintes propriedades de preenchimento individuais:
+
+		<ul>
+			<li>padding-top</li>
+			<li>padding-right</li>
+			<li>padding-bottom</li>
+			<li>padding-left</li>
+
+		</ul>
+
+		<p>Então, aqui está como funciona:<br>
+		<br>
+		Se a paddingpropriedade tiver quatro valores:</p>
+
+		<ul>
+			<li>preenchimento superior é 25px</li>
+			<li>preenchimento à direita é de 50 px</li>
+			<li>preenchimento inferior é de 75 px</li>
+			<li>preenchimento esquerdo é de 100 px</li>
+		</ul>
+	</p><br>
+	<div>
+		<h2>Exemplo</h2>
+		div {<br>
+ 		&nbsp;&nbsp;   padding: 25px 50px 75px 100px;
+		}<br>
+	</div><br>
+
+
+	<button type="button" onclick="botV()" style="margin-top: 10px; margin-right: 10px; margin-left: 600px; margin-bottom: 10px; background-color: purple; color: yellow; font-size: 18px;">
+			Voltar.
+		</button>
+
+	<button type="button" onclick="botP()" style="margin-top: 10px; margin-right: 10px; margin-left: 50px; margin-bottom: 10px; background-color: purple; color: yellow; font-size: 18px;"> 
+			Próxima.
+	</button>
+</body>
+</html>

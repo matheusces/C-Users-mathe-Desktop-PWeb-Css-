@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Margens</title>
+	<script type="text/javascript">
+			function botV(){
+				window.location.href = "../Css Fronteiras/topico_[6].html";
+			}
+			function botP(){
+				window.location.href = "../Css Preenchimento/topico_[8].html";
+			}
+		</script>
+
+		<style type="text/css">
+			body{
+				background-image: url(../Ripples_06_A-small-map.jpg);
+			}
+			p{
+				background-color: lightgreen;
+				color: black; 
+				margin-right: 400px;
+				align-content: center;
+				font-family: verdana;
+				font-size: 16px;
+
+			}
+			ul{
+				background-color: lightgreen;
+				color: black; 
+				margin-right: 400px;
+				align-content: center;
+				font-family: verdana;
+				font-size: 16px;				
+			}
+			h1, h2{
+				color: purple; 
+			}
+			div{ 
+				background-color: lightgrey;
+    			width: 500px;
+    			border-left: 7px solid green;
+    			padding: 10px;
+    			margin: 0px;
+			}
+
+
+		</style>
+</head>
+<body>
+	<h1>Margens CSS</h1>
+	<p>As <b style="background-color: yellow; color: gray;">margin</b> propriedades CSS são usadas para criar espaço em torno de elementos, fora de qualquer borda definida.<br>
+	<br>
+	Com CSS, você tem controle total sobre as margens. Existem propriedades para definir a margem para cada lado de um elemento (superior, direita, inferior e esquerda).</p>
+
+	<h2>Margem - Lados Individuais</h2>
+	<p>
+		CSS tem propriedades para especificar a margem para cada lado de um elemento:
+		<ul>
+			<li style="background-color: yellow; color: gray;">margin-top</li>
+			<li style="background-color: yellow; color: gray;">margin-right</li>
+			<li style="background-color: yellow; color: gray;">margin-bottom</li>
+			<li style="background-color: yellow; color: gray;">margin-left</li>
+		</ul>
+		Todas as propriedades de margem podem ter os seguintes valores:
+
+		<ul>
+			<li>auto - o navegador calcula a margem</li>
+			<li>length - especifica uma margem em px, pt, cm, etc.</li>
+			<li>% - especifica uma margem em% da largura do elemento contido</li>
+			<li>inherit - especifica que a margem deve ser herdada do elemento pai</li>
+		</ul>
+		<b>Dica:</b> valores negativos são permitidos.<br>
+		<br>
+		O exemplo a seguir define margens diferentes para todos os quatro lados de um elemento <p>:
+	</p>
+	<div>
+		<h2>Exemplo</h2>
+		p {<br>
+    	&nbsp;&nbsp;	margin-top: 100px;<br>
+    	&nbsp;&nbsp;	margin-bottom: 100px;<br>
+    	&nbsp;&nbsp;	margin-right: 150px;<br>
+    	&nbsp;&nbsp;	margin-left: 80px;<br>
+		}
+	</div>
+	<h2>Margem - Propriedade de taquigrafia</h2>
+	<p>
+		Para encurtar o código, é possível especificar todas as propriedades da margem em uma propriedade.<br>
+		<br>
+		A <b style="background-color: yellow; color: gray;"> margin</b> propriedade é uma propriedade abreviada para as seguintes propriedades de margem individuais:
+		<ul>
+			<li style="background-color: yellow; color: gray;">margin-top</li>
+			<li style="background-color: yellow; color: gray;">margin-right</li>
+			<li style="background-color: yellow; color: gray;">margin-bottom</li>
+			<li style="background-color: yellow; color: gray;">margin-left</li>
+		</ul>
+		Então, aqui está como funciona:<br>
+		<br>
+		Se a marginpropriedade tiver quatro valores:
+		<ul>
+			<li>a margem superior é 25px</li>
+			<li>margem direita é 50px</li>
+			<li>margem inferior é 75px</li>
+			<li>margem esquerda é 100px</li>
+		</ul>
+	</p>
+	<div>
+		<h2>Exemplo</h2>
+		p {<br>
+    	&nbsp;&nbsp;	margin: 25px 50px 75px 100px;<br>
+		}<br>
+	</div>
+
+
+	<button type="button" onclick="botV()" style="margin-top: 10px; margin-right: 10px; margin-left: 600px; margin-bottom: 10px; background-color: purple; color: yellow; font-size: 18px;">
+			Voltar.
+		</button>
+
+	<button type="button" onclick="botP()" style="margin-top: 10px; margin-right: 10px; margin-left: 50px; margin-bottom: 10px; background-color: purple; color: yellow; font-size: 18px;"> 
+			Próxima.
+	</button>
+</body>
+</html>
